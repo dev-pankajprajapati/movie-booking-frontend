@@ -1,0 +1,94 @@
+:root {
+  --bg-primary: #0b0f19;      /* Pure rich cinematic dark background */
+  --bg-surface: #131c2e;      /* Premium glassmorphic card base */
+  --color-accent: #f43f5e;     /* Rose brand accent label */
+  --color-available: #10b981;  /* Emerald color coordinates */
+  --color-reserved: #f59e0b;   /* Dynamic active hold orange */
+  --color-booked: #ef4444;     /* Crimson red sold out signal */
+  --color-selected: #3b82f6;   /* Electric active mesh choice */
+  --text-main: #f8fafc;
+  --text-muted: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+}
+
+.modern-card {
+  background: var(--bg-surface);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.modern-input {
+  background: #0b0f19;
+  border: 1px solid #334155;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.modern-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(244, 63, 94, 0.2);
+}
+
+.modern-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern-btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e11d48;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.4);
+}
+
+.btn-secondary {
+  background: #1e293b;
+  color: var(--text-main);
+  border: 1px solid #334155;
+}
+
+.btn-secondary:hover {
+  background: #334155;
+}
+
+.btn-disabled {
+  background: #1e293b !important;
+  color: #475569 !important;
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
